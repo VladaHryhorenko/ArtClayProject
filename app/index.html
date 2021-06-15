@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GulpProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/app.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section class="header-wrapper">
+    <header>
+      <div class="header-alignment">
+        <div class="header">
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"></a>
+          </div>
+          <div class="navigation">
+            <div class="nav">
+              <ul class="desktop-nav">
+                <li>
+                  <a class="nav-item">Techniques</a>
+                </li>
+                <li>
+                  <a class="nav-item">About us</a>
+                </li>
+                <li>
+                  <a class="nav-item">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-item">Plans</a>
+                </li>
+                <li>
+                  <a class="nav-item">Reviews</a>
+                </li>
+                <li>
+                  <a class="nav-item">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-and-user-block">
+            <div class="search-form-wrapper">
+              <form>
+                <div class="search-form">
+                  <input class="search-input" type="search">
+                </div>
+              </form>
+            </div>
+            <div class="user-wrapper">
+              <span class="user-greeting">Hi, Elena!</span>
+              <div class="user-avatar">
+                <img src="img/dest/user.jpg" alt="pic">
+              </div>
+            </div>
+            <div class="menu-icon-wrapper">
+              <div class="burger-icon-wrapper">
+                <!-- <button class="hamburger hamburger--spring" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button> -->
+                <button class="menu"
+                  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                  aria-label="Main Menu">
+                  <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-nav mobile-hidden">
+          <ul class="mob-nav">
+            <li>
+              <a class="nav-item">Techniques</a>
+            </li>
+            <li>
+              <a class="nav-item">About us</a>
+            </li>
+            <li>
+              <a class="nav-item">Gallery</a>
+            </li>
+            <li>
+              <a class="nav-item">Plans</a>
+            </li>
+            <li>
+              <a class="nav-item">Reviews</a>
+            </li>
+            <li>
+              <a class="nav-item">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <section class="main-bunner-section-wrapper">
+    <div class="main-bunner-section-alignment">
+      <div class="main-bunner-section">
+        <div class="main-bunner-title-block">
+          <h1 class="main-bunner-title">
+            Clay lessons from professionals
+          </h1>
+          <p class="main-bunner-title-description">
+            Our professionals will teach you how to make beauty from clay. We’re the pros in our business and know
+            everything about what we do. You will get unforgettable emotions, working with us. We have the newest
+            equipment and the best teachers, who has a masters degree in it.
+          </p>
+          <div class="main-bunner-title-link">
+            <a href="#" class="main-bunner-link">Choose a plan</a>
+          </div>
+        </div>
+        <div class="main-bunner-form-block">
+          <div class="main-bunner-form-wrapper">
+            <h3 class="main-bunner-form-title">Try unlimited one-day clay - only $50</h3>
+            <form>
+              <div class="main-bunner-form">
+                <label class="main-bunner-form-label" for="fname">Your name</label>
+                <input class="main-bunner-form-input" type="text" id="fname" name="firstname">
+                <label class="main-bunner-form-label" for="email">Your E-mail</label>
+                <input class="main-bunner-form-input" id="email" name="email" type="email">
+                <label class="main-bunner-form-label" for="date">Choose a day</label>
+                <input class="main-bunner-form-input" id="date" name="date" type="date" placeholder=" ">
+
+                <input class="main-bunner-form-submit" type="submit" value="TRY IT">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="technique-section-wrapper">
+    <div class="technique-section-alignment">
+      <div class="technique-section" id="techniques">
+        <h1 class="section-title">Techniques you will learn</h1>
+        <p class="section-description">Choose and watch the image below in order to find out more about the
+          techniques you will learn at your lessons.</p>
+      </div>
+      <div class="technique-section-slider">
+        <div class="slider-for">
+          <div><img src="img/dest/1.jpg"> </div>
+          <div><img src="img/dest/2.jpg"> </div>
+          <div><img src="img/dest/3.jpg"> </div>
+          <div><img src="img/dest/4.jpg"> </div>
+        </div>
+        <div class="slider-nav">
+          <div class="item "><img src="img/dest/1.jpg"></div>
+          <div class="item "><img src="img/dest/2.jpg"></div>
+          <div class="item "><img src="img/dest/3.jpg"></div>
+          <div class="item "><img src="img/dest/4.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="history-section-wrapper">
+    <div class="history-section-alignment">
+      <div class="history-section" id="history">
+        <h1 class="section-title">Our story</h1>
+        <p class="section-description">Our company was created in the 2015 year and since that time, we have been
+          teaching people to work with clay. We work out new techniques and made a lot of people happy.</p>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/app.min.js"></script>
+</body>
+
+</html>
