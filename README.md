@@ -1,1 +1,1 @@
-# ArtClayProject
+# ProjectBootstrap

@@ -25,36 +25,42 @@
             <div class="nav">
               <ul class="desktop-nav">
                 <li>
-                  <a class="nav-item">Techniques</a>
+                  <a href="#techniques" class="nav-item">Techniques</a>
+                </li>
+                <li class="item-history">
+                  <a href="#history" class="nav-item nav-item-about-us">About us</a>
+                  <ul class="history">
+                    <li><a class="sub-nav-item" href="#">Our team</a></li>
+                    <li><a class="sub-nav-item" href="#">History of our company</a></li>
+                    <li><a class="sub-nav-item" href="#">Our blog</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a class="nav-item">About us</a>
+                  <a href="#gallery" class="nav-item">Gallery</a>
                 </li>
                 <li>
-                  <a class="nav-item">Gallery</a>
+                  <a href="#plans" class="nav-item">Plans</a>
                 </li>
                 <li>
-                  <a class="nav-item">Plans</a>
+                  <a href="#reviews" class="nav-item">Reviews</a>
                 </li>
                 <li>
-                  <a class="nav-item">Reviews</a>
-                </li>
-                <li>
-                  <a class="nav-item">Contacts</a>
+                  <a href="#contacts" class="nav-item">Contacts</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="search-and-user-block">
             <div class="search-form-wrapper">
-              <form>
-                <div class="search-form">
-                  <input class="search-input" type="search">
-                </div>
-              </form>
+              <button id="open"></button>
+              <!-- <div class="form-class" id="form">
+                <form action="#" method="post">
+                  <input class="form-search-input" type="search" value="" placeholder="Search" />
+                </form>
+              </div> -->
             </div>
             <div class="user-wrapper">
-              <span class="user-greeting">Hi, Elena!</span>
+              <div><span class="user-greeting">Hi, Elena!</span></div>
               <div class="user-avatar">
                 <img src="img/dest/user.jpg" alt="pic">
               </div>
@@ -84,24 +90,35 @@
         <div class="mobile-nav mobile-hidden">
           <ul class="mob-nav">
             <li>
-              <a class="nav-item">Techniques</a>
+              <a href="#techniques" class="nav-item">Techniques</a>
+            </li>
+            <li class="item-history">
+              <a href="#" class="nav-item nav-item-about-us">About us</a>
+              <ul class="history history-hidden">
+                <li><a class="sub-nav-item" href="#">Our team</a></li>
+                <li><a class="sub-nav-item" href="#">History of our company</a></li>
+                <li><a class="sub-nav-item" href="#">Our blog</a></li>
+              </ul>
             </li>
             <li>
-              <a class="nav-item">About us</a>
+              <a href="#gallery" class="nav-item">Gallery</a>
             </li>
             <li>
-              <a class="nav-item">Gallery</a>
+              <a href="#plans" class="nav-item">Plans</a>
             </li>
             <li>
-              <a class="nav-item">Plans</a>
+              <a href="#reviews" class="nav-item">Reviews</a>
             </li>
             <li>
-              <a class="nav-item">Reviews</a>
-            </li>
-            <li>
-              <a class="nav-item">Contacts</a>
+              <a href="#contacts" class="nav-item">Contacts</a>
             </li>
           </ul>
+        </div>
+        <div class="form-class" id="form">
+          <form action="#" method="post">
+            <input class="form-search-input" type="search" value="" placeholder="Search..." />
+            <input class="form-search-input-submit" type="submit" value="">
+          </form>
         </div>
       </div>
     </header>
@@ -132,8 +149,9 @@
                 <input class="main-bunner-form-input" type="text" id="fname" name="firstname">
                 <label class="main-bunner-form-label" for="email">Your E-mail</label>
                 <input class="main-bunner-form-input" id="email" name="email" type="email">
-                <label class="main-bunner-form-label" for="date">Choose a day</label>
-                <input class="main-bunner-form-input" id="date" name="date" type="date" placeholder=" ">
+                <label class="main-bunner-form-label" for="calendar">Choose a day</label>
+                <div><input class="main-bunner-form-input" id="calendar" name="calendar" type="text"></div>
+                
 
                 <input class="main-bunner-form-submit" type="submit" value="TRY IT">
               </div>
@@ -145,9 +163,9 @@
 
   </section>
 
-  <section class="technique-section-wrapper">
+  <section class="technique-section-wrapper" id="techniques">
     <div class="technique-section-alignment">
-      <div class="technique-section" id="techniques">
+      <div class="technique-section">
         <h1 class="section-title">Techniques you will learn</h1>
         <p class="section-description">Choose and watch the image below in order to find out more about the
           techniques you will learn at your lessons.</p>
@@ -169,17 +187,445 @@
     </div>
   </section>
 
-  <section class="history-section-wrapper">
+  <section class="history-section-wrapper" id="history">
     <div class="history-section-alignment">
-      <div class="history-section" id="history">
+      <div class="history-section">
         <h1 class="section-title">Our story</h1>
         <p class="section-description">Our company was created in the 2015 year and since that time, we have been
-          teaching people to work with clay. We work out new techniques and made a lot of people happy.</p>
+          teaching people to work with clay. We work out new techniques and made a lot of people happy.
+        </p>
+        <div class="history-slider-wrapper">
+          <div class="progress-years">
+            <span>2015</span>
+            <span>2016</span>
+            <span>2017</span>
+            <span>2018</span>
+            <span>2019</span>
+          </div>
+          <div class="container">
+            <div id="slider-progress" class="slider-items slider-progress">
+              <div id="year2015" class="slider-item">
+                <p>In 2015 our company became bigger, we had hired 3 new teachers. We also bought new
+                  equipment and added one more class. The number of students increased by 10%. We started
+                  learning our students with new techniques and organized evening classes.</p>
+              </div>
+              <div id="year2016" class="slider-item">
+                <p>In 2016 our company became bigger, we had hired 3 new teachers. We also bought new
+                  equipment and added one more class. The number of students increased by 10%. We started
+                  learning our students with new techniques and organized evening classes.</p>
+              </div>
+              <div id="year2017" class="slider-item">
+                <p>In 2017 our company became bigger, we had hired 3 new teachers. We also bought new
+                  equipment and added one more class. The number of students increased by 10%. We started
+                  learning our students with new techniques and organized evening classes.</p>
+              </div>
+              <div id="year2018" class="slider-item">
+                <p>In 2018 our company became bigger, we had hired 3 new teachers. We also bought new
+                  equipment and added one more class. The number of students increased by 10%. We started
+                  learning our students with new techniques and organized evening classes.</p>
+              </div>
+              <div id="year2019" class="slider-item">
+                <p>In 2019 our company became bigger, we had hired 3 new teachers. We also bought new
+                  equipment and added one more class. The number of students increased by 10%. We started
+                  learning our students with new techniques and organized evening classes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="gallery-section-wrapper" id="gallery">
+    <div class="gallery-section">
+      <h1 class="section-title">Gallery</h1>
+      <p class="section-description">With us, you will learn the art of clay and became a real professional in this
+        sphere, because we have the best teachers and our students are always happy after the lessons.
+      </p>
+      <div class="gallery-section-portfolio">
+        <div class="gallery-item">
+          <img src="img/dest/item1.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item2.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item3.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item4.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item5.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item6.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item7.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+          <img src="img/dest/item8.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="plans-section-wrapper" id="plans">
+    <div class="plans-section-alignment">
+      <div class="plans-section">
+        <h1 class="section-title">Plans</h1>
+        <p class="section-description">Choose your plan and let’s make beauty together. Our classes are taught by top
+          practitioners.</p>
+        <div class="plans-packets">
+          <div class="plan-packets-item">
+            <h3 class="plan-card-title">Basic</h3>
+            <div class="plan-card-price-block">
+              <h6 class="plan-card-price"><span>250</span> / month</h6>
+            </div>
+            <p class="plans-packets-description">
+              - All techniques and equipment
+            </p>
+            <p class="plans-packets-description">
+              - 2 hours of instruction / week
+            </p>
+            <p class="plans-packets-description">
+              - 5lbs of clay
+            </p>
+            <p class="plans-packets-description">
+              - Glazing & firing
+            </p>
+            <p class="plans-packets-description">
+              - Open Studio hours (9 am — 11 am) 2 times a week
+            </p>
+            <a class="plans-link" href="#">BUY IT NOW</a>
+          </div>
+          <div class="plan-packets-item plan-packets-center-item">
+            <h3 class="plan-card-title">Standart</h3>
+            <div class="plan-card-price-block">
+              <h6 class="plan-card-price"><span>350</span> / month</h6>
+            </div>
+            <p class="plans-packets-description">
+              - All techniques and equipment
+            </p>
+            <p class="plans-packets-description">
+              - 6 hours of instruction / week
+            </p>
+            <p class="plans-packets-description">
+              - 15lbs of clay
+            </p>
+            <p class="plans-packets-description">
+              - Glazing & firing
+            </p>
+            <p class="plans-packets-description">
+              - Open Studio hours (6 pm — 9 pm) 2 times a week
+            </p>
+            <a class="plans-link" href="#">BUY IT NOW</a>
+          </div>
+          <div class="plan-packets-item">
+            <h3 class="plan-card-title">Premium</h3>
+            <div class="plan-card-price-block">
+              <h6 class="plan-card-price"><span>650</span> / month</h6>
+            </div>
+            <p class="plans-packets-description">
+              - All techniques and equipment
+            </p>
+            <p class="plans-packets-description">
+              - Personal instructor 10 hours /week
+            </p>
+            <p class="plans-packets-description">
+              - Unlimited clay
+            </p>
+            <p class="plans-packets-description">
+              - All night access 24/7
+            </p>
+            <p class="plans-packets-description">
+              - Unlimited Open Studio hours to come in and practice outside of class
+            </p>
+            <a class="plans-link" href="#">BUY IT NOW</a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="reviews-section-wrapper" id="reviews">
+    <div class="reviews-section-alignment">
+      <div class="reviews-section">
+        <h1 class="section-title">Reviews</h1>
+        <p class="section-description">Our clients always stay very happy, just read their reviews below.</p>
+        <div class="review-cards slider">
+          <div class="review-card-item">
+            <div class="review-user-avatar">
+              <img src="img/dest/user1.jpg" alt="pic">
+            </div>
+            <h3 class="review-user-name">Angela Mortensen</h3>
+            <span class="review-user-city">New York, NY</span>
+            <div class="review-user-mark">
+              <div class="block-of-stars">
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+              </div>
+            </div>
+            <p class="review-user-description">It was the most exciting lessons in my life I’m so grateful to the Art
+              Clay for their service and professionalism! Thanks!</p>
+            <span class="date-of-review">01 may 2019</span>
+
+
+          </div>
+          <div class="review-card-item">
+            <div class="review-user-avatar">
+              <img src="img/dest/user2.jpg" alt="pic">
+            </div>
+            <h3 class="review-user-name">Dilan Mason</h3>
+            <span class="review-user-city">New York, NY</span>
+            <div class="review-user-mark">
+              <div class="block-of-stars">
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/half-star.svg" alt="pic">
+                </div>
+              </div>
+            </div>
+            <p class="review-user-description">I am completely satisfied with the service. Good! I’m happy right now! I
+              highly recommend it! For me, it was the best lessons ever! </p>
+            <span class="date-of-review">20 apr 2019</span>
+
+
+          </div>
+          <div class="review-card-item">
+            <div class="review-user-avatar">
+              <img src="img/dest/user3.jpg" alt="pic">
+            </div>
+            <h3 class="review-user-name">Amanda Berkley</h3>
+            <span class="review-user-city">New York, NY</span>
+            <div class="review-user-mark">
+              <div class="block-of-stars">
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+              </div>
+            </div>
+            <p class="review-user-description">Cool school! Cool lessons and teachers! It was the best time ever! I
+              highly recommend it! You will become a professional!</p>
+            <span class="date-of-review">12 mar 2019</span>
+          </div>
+          <div class="review-card-item">
+            <div class="review-user-avatar">
+              <img src="img/dest/user1.jpg" alt="pic">
+            </div>
+            <h3 class="review-user-name">Angela Mortensen</h3>
+            <span class="review-user-city">New York, NY</span>
+            <div class="review-user-mark">
+              <div class="block-of-stars">
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+              </div>
+            </div>
+            <p class="review-user-description">It was the most exciting lessons in my life I’m so grateful to the Art
+              Clay for their service and professionalism! Thanks!</p>
+            <span class="date-of-review">01 may 2019</span>
+          </div>
+          <div class="review-card-item">
+            <div class="review-user-avatar">
+              <img src="img/dest/user2.jpg" alt="pic">
+            </div>
+            <h3 class="review-user-name">Dilan Mason</h3>
+            <span class="review-user-city">New York, NY</span>
+            <div class="review-user-mark">
+              <div class="block-of-stars">
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/Star.svg" alt="pic">
+                </div>
+                <div class="star">
+                  <img src="img/dest/half-star.svg" alt="pic">
+                </div>
+              </div>
+            </div>
+            <p class="review-user-description">I am completely satisfied with the service. Good! I’m happy right now! I
+              highly recommend it! For me, it was the best lessons ever! </p>
+            <span class="date-of-review">20 apr 2019</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contacts-section-wrapper" id="contacts">
+    <div class="contacts-section-alignment">
+      <div class="contacts-section">
+        <h1 class="section-title">Contacts</h1>
+        <div class="office-information">
+          <div class="office-adress-map" id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.5223002815!2d36.14574126089949!3d49.99450702479205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1623801716622!5m2!1suk!2sua"
+              width="100%" height="364" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="office-info">
+            <h3 class="office-info-title">Our office:</h3>
+            <p class="office-info-text office-info-phones">(718) 951-5065<br>(718) 951-5055</p>
+            <p class="office-info-text office-info-email">art.clay@gmail.com</p>
+            <p class="office-info-text office-info-location">Art Clay Company <br>2901 Bedford Avenue <br>Brooklyn, NY
+              11210 <br>P: 718.951.5000</p>
+            <p class="office-info-text office-info-schedule">Monday - Friday <br>09:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-section-wrapper">
+    <div class="footer-section-alignment">
+      <footer>
+        <div class="footer-section">
+          <div class="footer-navigation">
+            <div class="footer-nav">
+              <ul class="desktop-nav">
+                <li>
+                  <a href="#techniques" class="nav-item">Techniques</a>
+                </li>
+                <li class="item-history">
+                  <a href="#history" class="nav-item nav-item-about-us">About us</a>
+                  <ul class="history">
+                    <li><a class="sub-nav-item" href="#">Our team</a></li>
+                    <li><a class="sub-nav-item" href="#">History of our company</a></li>
+                    <li><a class="sub-nav-item" href="#">Our blog</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#gallery" class="nav-item">Gallery</a>
+                </li>
+                <li>
+                  <a href="#plans" class="nav-item">Plans</a>
+                </li>
+                <li>
+                  <a href="#reviews" class="nav-item">Reviews</a>
+                </li>
+                <li>
+                  <a href="#contacts" class="nav-item">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-nav">
+            <ul class="mob-nav">
+              <li>
+                <a href="#techniques" class="nav-item">Techniques</a>
+              </li>
+              <li class="item-history">
+                <a href="#" class="nav-item nav-item-about-us">About us</a>
+                <ul class="history history-hidden">
+                  <li><a class="sub-nav-item" href="#">Our team</a></li>
+                  <li><a class="sub-nav-item" href="#">History of our company</a></li>
+                  <li><a class="sub-nav-item" href="#">Our blog</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#gallery" class="nav-item">Gallery</a>
+              </li>
+              <li>
+                <a href="#plans" class="nav-item">Plans</a>
+              </li>
+              <li>
+                <a href="#reviews" class="nav-item">Reviews</a>
+              </li>
+              <li>
+                <a href="#contacts" class="nav-item">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo-wrapper footer-logo">
+            <a class="logo-footer" href="index.html"></a>
+          </div>
+          <div class="social-media-block">
+            <div class="social-media-link">
+              <a href="#"><img src="img/dest/facebook.svg" alt=""></a>
+            </div>
+            <div class="social-media-link">
+              <a href="#"><img src="img/dest/twitter.svg" alt=""></a>
+            </div>
+            <div class="social-media-link">
+              <a href="#"><img src="img/dest/instagram.svg" alt=""></a>
+            </div>
+          </div>
+          <p class="footer-rigts">© All rights reserved, 2021 ArtClay</p>
+          <p class="footer-rigts">This site is protected by reCAPTCHA and the <a href="#">Google Privacy Policy</a> and
+            <a href="#">Terms of Service</a> apply.</p>
+        </div>
+      </footer>
+
+    </div>
+  </section>
+
+
+
   <script type="text/javascript" src="js/app.min.js"></script>
+
 </body>
 
 </html>
